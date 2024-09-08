@@ -12,19 +12,22 @@
 body {
     display: flex;
     justify-content: center;
+    margin: 0;
+    padding: 0;
 }
 
 .main-container {
     width: 100%;
     max-width: 767.98px;
-    padding: 0 50px;
+    padding: 0;
+
 }
 
 .img {
-    display: flex;
+    display: block;
     justify-content: center;
     width: 100%;
-    height: 136px;
+    max-width: 100%;
     border-radius: 20px;
     object-fit: cover;
 }
@@ -43,7 +46,12 @@ body {
 .card img {
     object-fit: cover;
     max-width: 100%;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
 }
+
+
 
 .search {
     background-color: lightgray;
@@ -63,7 +71,18 @@ body {
 
 }
 .logo-title {
-    
+    padding: 15px 0;
+}
+
+.logo-title img {
+    width: 60%;
+    max-width: 100%;
+    margin: 0 auto;
+    display: block;
+}
+
+.fonctionnement, .restaurant-wrapper, footer {
+    padding: 0 15px;
 }
 
 .fonctionnement {
@@ -75,9 +94,63 @@ body {
 }
 
 .restaurant-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    max-width: 100%;
+    margin: 0 auto;
+    padding: auto;
 
 }
 
 .footer-content {
     background-color: #353535;
+    display: block;
+}
+
+footer {
+    background-color: #353535;
+    display: block;
+    width: 100%;
+    max-width: 100%;
+    justify-content: flex-start;
+    margin: 0;
+}
+
+.footer-logo-title {
+  margin: 0;
+  width: 60%;
+  max-width: 100%;
+  margin-top: 50px;
+
+}
+
+h4 {
+    margin: 0;
+}
+
+
+.reservez {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.menureservation {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/***** la palette du goût****/
+
+header {
+
+}
+
+.menu-wrapper {
+
 }
