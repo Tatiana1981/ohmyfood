@@ -1,120 +1,150 @@
 * {
-    font-family: 'roboto', 'shrikhand';
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 :root {
-    --main-color: #9356DC;
-    --main-bg-color: #FF79DA;
-    --filter-bg-color: #99E2D0;
+  --main-color: #9356dc;
+  --main-bg-color: #ff79da;
+  --filter-bg-color: #99e2d0;
 }
 
 body {
-    display: flex;
-    justify-content: center;
-    margin: 0;
-    padding: 0;
+  font-family: "roboto", Arial, sans-serif;
+  /*'shrikhand';*/
+  display: flex;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+}
+.title-skrikhand {
+  font-family: "shrikhand", Georgia, Serif;
+  font-weight: normal;
+}
+.title-logo {
+  font-size: 30px;
+  line-height: 44px;
+  text-align: center;
+  margin: 0;
+}
+.title-footer {
+  color: white;
 }
 
 .main-container {
-    width: 100%;
-    max-width: 767.98px;
-    padding: 0;
-
+  width: 100%;
+  max-width: 767.98px;
+  padding: 0;
 }
 
 .img {
-    display: block;
-    justify-content: center;
-    width: 100%;
-    max-width: 100%;
-    border-radius: 20px;
-    object-fit: cover;
+  display: block;
+  justify-content: center;
+  width: 100%;
+  max-width: 100%;
+  border-radius: 20px;
+  object-fit: cover;
 }
 
 .section {
-    display: block;
+  display: block;
 }
 
 .card {
-    background-color: white;
-    border-radius: 20px;
-    padding: 5px;
-    filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
+  background-color: white;
+  border-radius: 20px;
+  padding: 5px;
+  filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
 }
 
 .card img {
-    object-fit: cover;
-    max-width: 100%;
-    width: 100%;
-    display: flex;
-    flex-wrap: wrap;
+  object-fit: cover;
+  max-width: 100%;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
 }
 
-
-
-.search {
-    background-color: lightgray;
-    width: 100%;
-    border: none;
-    filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
+.search-wrapper {
+  background-color: #eaeaea;
+  width: 100%;
+  border: none;
+  /*filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));*/
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  height: 50px;
+  display: flex;
+  align-items: center;
+}
+.search-form {
+  display: flex;
+  gap: 10px;
+  padding-left: 30%;
 }
 
+.restaurantlist {
+  width: 100%;
+}
 .search-bar {
-    background-color: lightgray;
-    width: 100%;
-    border: none;
-    /***filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));***/
+  background-color: #eaeaea;
+  width: 100%;
+  border: none;
+  font-family: "Roboto";
+  font-size: 16px;
+  line-height: 18px;
+  color: #353535;
+  font-family: "roboto", Arial, sans-serif;
+  /***filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));***/
+}
+.search-bar::placeholder {
+  color: #353535;
 }
 
 .navbar {
-
 }
 .logo-title {
-    padding: 15px 0;
+  padding: 15px 0 5px 0px;
 }
 
 .logo-title img {
-    width: 60%;
-    max-width: 100%;
-    margin: 0 auto;
-    display: block;
+  width: 60%;
+  max-width: 100%;
+  margin: 0 auto;
+  display: block;
 }
 
-.fonctionnement, .restaurant-wrapper, footer {
-    padding: 0 15px;
+.fonctionnement,
+.restaurant-wrapper,
+footer {
+  padding: 0 15px;
 }
 
 .fonctionnement {
-
 }
 
 .filtersearch {
-    list-style-type: none;
+  list-style-type: none;
 }
 
 .restaurant-wrapper {
-    display: flex;
-    flex-wrap: wrap;
-    width: 100%;
-    max-width: 100%;
-    margin: 0 auto;
-    padding: auto;
-
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  max-width: 100%;
+  margin: 0 auto;
+  padding: auto;
 }
 
 .footer-content {
-    background-color: #353535;
-    display: block;
+  background-color: #353535;
+  display: block;
 }
 
 footer {
-    background-color: #353535;
-    display: block;
-    width: 100%;
-    max-width: 100%;
-    justify-content: flex-start;
-    margin: 0;
+  background-color: #353535;
+  display: block;
+  width: 100%;
+  max-width: 100%;
+  justify-content: flex-start;
+  margin: 0;
 }
 
 .footer-logo-title {
@@ -122,35 +152,31 @@ footer {
   width: 60%;
   max-width: 100%;
   margin-top: 50px;
-
 }
 
 h4 {
-    margin: 0;
+  margin: 0;
 }
 
-
 .reservez {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 
 .menureservation {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 /***** la palette du goût****/
 
 header {
-
 }
 
 .menu-wrapper {
-
 }
