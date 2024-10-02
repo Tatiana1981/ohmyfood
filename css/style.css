@@ -20,6 +20,11 @@ body {
   font-family: "shrikhand", Georgia, Serif;
   font-weight: normal;
 }
+
+h2 {
+    display: block;
+}
+
 .title-logo {
   font-size: 30px;
   line-height: 44px;
@@ -54,7 +59,7 @@ body {
 }
 
 .logo-title {
-    padding: 15px 0;
+    position: relative;
 }
 .fonctionnement, .restaurant-wrapper, footer {
     padding: 0 15px;
@@ -138,11 +143,11 @@ body {
 }
 
 .logo-title {
-    padding: 15px 0 5px 0px;
-    display: flex;
-    /* align-content: space-around; */
-    justify-content: space-around;
-    margin-right: 60px;
+    padding: 0;
+    display: block;
+    position: relative;
+
+    
   }
   
   .img-navbar {
@@ -153,7 +158,12 @@ body {
   }
 
   i.fa-solid.fa-arrow-left {
-    padding-block: 10px;
+    padding-block: 12px;
+}
+
+i.fa-solid.fa-arrow-left, .title-logo {
+    display: block;
+
 }
 
 .fonctionnement,
@@ -184,7 +194,6 @@ footer {
   background-color: #353535;
   display: block;
   width: 100%;
-  max-width: 100%;
   justify-content: flex-start;
   margin: 0;
 }
@@ -193,7 +202,6 @@ footer {
   margin: 0;
   width: 60%;
   max-width: 100%;
-  margin-top: 50px;
 }
 
 .footer-title-logo {
@@ -224,22 +232,26 @@ h4 {
 
 /***** la palette du goût****/
 
-
+main {
+    background-color: #f6f6f6;
+}
 
 .menu-wrapper {
 
     border: 1px solid transparent;
-    max-width: 100%;
+    position: relative;
     height: auto;
     border-radius: 40px 40px 0 0;
     background-color: #f6f6f6;
     display: flex;
     flex-direction: column;
     bottom: 40px;
-    transform: translateY(-40px);
+    /*transform: translateY(-40px);*/
     }
 
-
+section {
+    display: block;
+}
 
 
 .img-lapalette {
@@ -254,5 +266,16 @@ footer {
 
 h4 {
     margin: 0;
-    margin-top: 15px;
 }
+
+.menu-entrees {
+    max-width: 100%;
+    display: flex;
+}
+
+
+.entrees-list {
+    max-width: 100%;
+}
+
+
