@@ -184,9 +184,16 @@ footer {
   padding: auto;
 }
 
+/*footer*/
+
 .footer-content {
-  background-color: #353535;
-  display: block;
+  display: flex;
+  margin: auto;
+  position: relative;
+  flex-direction: column;
+  padding: 1rem;
+  max-width: 1280px;
+
 }
 
 footer {
@@ -208,6 +215,34 @@ footer {
   /* align-content: space-around; */
   justify-content: space-around;
   margin-right: 60px;
+}
+
+.proposer-restaurant {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 7rem 0px 0rem;
+}
+
+.partenaire {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0rem 9rem 0px 0rem;
+}
+
+.mention-legal {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0;
+}
+
+.contact {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0;
 }
 
 h4 {
@@ -280,4 +315,240 @@ h4 {
 .back {
   position: absolute;
   left: 15px;
+}
+
+.restaurant-name {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem 0 1rem;
+}
+
+/*Entrées*/
+
+.encart-1 {
+  background-color: #fff;
+  padding: 1rem;
+  display: flex;
+  border-radius: .75rem;
+  margin: 1rem 0;
+  box-shadow: .25rem .25rem 1rem rgba(0, 0, 0, .1);
+  overflow: hidden;
+  max-width: 100%;
+  flex-direction: column;
+  white-space: nowrap;
+}
+
+.encart-2 {
+  background-color: #fff;
+  padding: 1rem;
+  display: flex;
+  border-radius: .75rem;
+  margin: 1rem 0;
+  box-shadow: .25rem .25rem 1rem rgba(0, 0, 0, .1);
+  overflow: hidden;
+  max-width: 100%;
+  flex-direction: column;
+  white-space: nowrap;
+}
+.encart-3 {
+  background-color: #fff;
+  padding: 1rem;
+  display: flex;
+  border-radius: .75rem;
+  margin: 1rem 0;
+  box-shadow: .25rem .25rem 1rem rgba(0, 0, 0, .1);
+  overflow: hidden;
+  max-width: 100%;
+  flex-direction: column;
+  white-space: nowrap;
+}
+
+.bottom-1 {
+  display: flex;
+  align-items: baseline;
+  gap: 9rem;
+}
+
+.bottom-2 {
+  display: flex;
+  align-items: baseline;
+  gap: 5rem;
+}
+
+.bottom-3 {
+  display: flex;
+  align-items: baseline;
+  gap: 2rem;
+}
+
+/*Plats*/
+
+.menu-plats {
+  max-width: 100%;
+  display: flex;
+}
+
+.plats-list {
+  max-width: 100%;
+}
+
+.plats, .plats li {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.encart-4 {
+  background-color: #fff;
+  padding: 1rem;
+  display: flex;
+  border-radius: .75rem;
+  margin: 1rem 0;
+  box-shadow: .25rem .25rem 1rem rgba(0, 0, 0, .1);
+  overflow: hidden;
+  max-width: 100%;
+  flex-direction: column;
+  white-space: nowrap;
+}
+
+.encart-5 {
+  background-color: #fff;
+  padding: 1rem;
+  display: flex;
+  border-radius: .75rem;
+  margin: 1rem 0;
+  box-shadow: .25rem .25rem 1rem rgba(0, 0, 0, .1);
+  overflow: hidden;
+  max-width: 100%;
+  flex-direction: column;
+  white-space: nowrap;
+}
+
+.encart-6 {
+  background-color: #fff;
+  padding: 1rem;
+  display: flex;
+  border-radius: .75rem;
+  margin: 1rem 0;
+  box-shadow: .25rem .25rem 1rem rgba(0, 0, 0, .1);
+  overflow: hidden;
+  max-width: 100%;
+  flex-direction: column;
+  white-space: nowrap;
+}
+
+.bottom-4 {
+  display: flex;
+  align-items: baseline;
+  gap: 2rem;
+}
+
+.bottom-5 {
+  display: flex;
+  align-items: baseline;
+  gap: 2rem;
+}
+
+.bottom-6 {
+  display: flex;
+  align-items: baseline;
+  gap: 2rem;
+}
+
+/*Desserts*/
+
+.menu-desserts {
+  max-width: 100%;
+  display: flex;
+}
+
+.desserts-list {
+  max-width: 100%;
+}
+
+.desserts, .desserts li {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.encart-7 {
+  background-color: #fff;
+  padding: 1rem;
+  display: flex;
+  border-radius: .75rem;
+  margin: 1rem 0;
+  box-shadow: .25rem .25rem 1rem rgba(0, 0, 0, .1);
+  overflow: hidden;
+  max-width: 100%;
+  flex-direction: column;
+  white-space: nowrap;
+}
+
+.encart-8 {
+  background-color: #fff;
+  padding: 1rem;
+  display: flex;
+  border-radius: .75rem;
+  margin: 1rem 0;
+  box-shadow: .25rem .25rem 1rem rgba(0, 0, 0, .1);
+  overflow: hidden;
+  max-width: 100%;
+  flex-direction: column;
+  white-space: nowrap;
+}
+
+.encart-9 {
+  background-color: #fff;
+  padding: 1rem;
+  display: flex;
+  border-radius: .75rem;
+  margin: 1rem 0;
+  box-shadow: .25rem .25rem 1rem rgba(0, 0, 0, .1);
+  overflow: hidden;
+  max-width: 100%;
+  flex-direction: column;
+  white-space: nowrap;
+}
+
+.bottom-7 {
+  display: flex;
+  align-items: baseline;
+  gap: 2rem;
+}
+
+.bottom-8 {
+  display: flex;
+  align-items: baseline;
+  gap: 2rem;
+}
+
+.bottom-9 {
+  display: flex;
+  align-items: baseline;
+  gap: 2rem;
+}
+
+/*Buttom Comander*/
+
+.commande-btn {
+  display: flex;
+  text-decoration: none;
+  justify-content: center;
+  padding: 3rem 0;
+}
+
+.combtn {
+  border: 0;
+  padding: .75rem 1.5rem;
+  font-weight: 500;
+  font-size: 1.1rem;
+  border-radius: 100px;
+  color: #fff;
+  background-color: #686868;
+  background-image: linear-gradient(0deg, rgba(147, 86, 220, .9), rgba(255, 121, 218, .9));
+  transition-duration: .25ms;
+  box-shadow: .25rem, .25rem, 10px rgba(0, 0, 0, 0.25);
+  cursor: pointer;
 }
