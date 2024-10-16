@@ -64,6 +64,48 @@ h2 {
 .restaurant-wrapper {
   padding: 0 15px;
 }
+.fonctionnement {
+  background-color: white;
+}
+.filtersearch {
+  margin: 0;
+  padding: 0;
+}
+.filtre {
+  height: 70px;
+  border: 1px solid #f6f6f6;
+  border-radius: 20px;
+  background-color: #f6f6f6;
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.filtre a {
+  font-size: 16px;
+  line-height: 19px;
+  color: #000;
+  text-decoration: none;
+  font-weight: 500;
+}
+.filtre i {
+  color: #9356dc;
+  font-size: 18px;
+}
+.filtre .number {
+  display: block;
+  width: 24px;
+  height: 24px;
+  border-radius: 12px;
+  color: white;
+  background-color: #9356dc;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 14px;
+  position: relative;
+  right: 10px;
+}
 footer {
   padding: 0;
 }
@@ -82,10 +124,16 @@ footer {
 }
 
 .card {
-  background-color: white;
-  border-radius: 20px;
-  padding: 5px;
+  margin-bottom: 20px;
   filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
+  position: relative;
+}
+.pastille {
+  background-color: green;
+  color: #000;
+  position: absolute;
+  top: 20px;
+  right: 25px;
 }
 
 .card img {
@@ -95,6 +143,17 @@ footer {
   display: flex;
   flex-wrap: wrap;
   border-radius: 20px;
+  border-bottom-right-radius: 0px;
+  border-bottom-left-radius: 0px;
+}
+.card-content {
+  background-color: white;
+  border-radius: 20px;
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+}
+.card-content h3 {
+  margin: 0;
 }
 
 .search-wrapper {
@@ -139,7 +198,6 @@ footer {
 
 .search-bar::placeholder {
   color: #353535;
-  background-color: lightgray;
   width: 100%;
   border: none;
   /***filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));***/
@@ -183,6 +241,7 @@ i.fa-solid.fa-arrow-left,
   max-width: 100%;
   margin: 0 auto;
   padding: auto;
+  background-color: #f6f6f6;
 }
 
 /*footer*/
@@ -261,6 +320,7 @@ h4 {
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  background-color: #f6f6f6;
 }
 
 .menureservation {
