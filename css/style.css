@@ -23,6 +23,7 @@ body {
 
 h2 {
   display: block;
+
 }
 
 .title-logo {
@@ -129,11 +130,13 @@ footer {
   position: relative;
 }
 .pastille {
-  background-color: green;
-  color: #000;
+  background-color: #99E2D0;
+  color: #008766;
   position: absolute;
   top: 20px;
   right: 25px;
+  padding: 7px;
+  border-radius: 2px;
 }
 
 .card img {
@@ -153,7 +156,23 @@ footer {
   border-top-right-radius: 0px;
 }
 .card-content h3 {
-  margin: 0;
+  margin: 18px;
+}
+
+i.fa-solid.fa-heart {
+  color: #9356DC;
+}
+
+p.card-place {
+  /* margin: 18px; */
+  margin-top: -15px;
+  margin-left: 18px;
+}
+
+span.heart {
+  display: block;
+  font-size: 2em;
+  margin-left: 86%;
 }
 
 .search-wrapper {
@@ -331,6 +350,12 @@ h4 {
   align-items: center;
 }
 
+.menureservation h2 {
+  display: block;
+  text-align: center;
+
+}
+
 /***** la palette du goût****/
 
 main {
@@ -363,6 +388,15 @@ footer {
 
 h4 {
   margin: 0;
+  text-align: center;
+  font-family: "roboto", Arial, sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  position: relative;
+  display: block;
 }
 
 .menu-entrees {
@@ -661,3 +695,59 @@ h4 {
   margin-top: 8px;
   border: 2px solid rgba(153, 226, 208, 1);
 }
+
+
+/************MEDIA QUERIES*********/
+
+/*desktop*/
+
+@media only screen and (min-width: 992px) {
+
+  .filtersearch {
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .restaurants-cards {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: baseline;
+    align-content: flex-start;
+    position: relative;
+    max-width: 100%;
+    width: 100%;
+    margin: auto;
+}
+
+.footer-content {
+  display: flex;
+  margin: auto;
+  position: relative;
+  flex-direction: row;
+  padding: 1rem;
+  color: white;
+  max-width: 100%;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-content: flex-start;
+  width: 100%;
+}
+}
+
+/*tablets*/
+@media only screen and (min-width: 768px) {
+
+  .filtersearch {
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+
+/*...*/
+
