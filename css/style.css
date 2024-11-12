@@ -668,6 +668,42 @@ a {
   box-shadow: 0.25rem, 0.25rem, 10px rgba(0, 0, 0, 0.25);
   cursor: pointer;
 }
+
+.menubtn_confirmation {
+  background-color: #99E2D0;
+  margin: -1rem -5rem -1rem 1rem;
+  width: 4rem;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  transition-duration: 0.5s;
+}
+.menubtn_icon {
+  height: 1.6rem;
+  width: 1.6rem;
+  background-color: white;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  border-radius: 100px;
+  transform: rotate(180deg);
+  transition-duration: 0.9s;
+}
+.menubtn {
+  background-color: white;
+  padding: 1rem;
+  display: flex;
+  border-radius: 0.75rem;
+  margin: 1rem 0;
+  box-shadow: 0.25rem 0.25rem 1rem rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  cursor: pointer;
+  animation: itemAppear .6s;
+  animation-timing-function: cubic-bezier(.5,1.58,.34,.82);
+  animation-fill-mode: both;
+  transform: scale(0);
+  max-width: 100%;
+}
 .menu-entrees,
 .menu-plats,
 .menu-desserts {
