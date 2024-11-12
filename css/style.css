@@ -68,7 +68,7 @@ h2 {
   background-color: white;
 }
 .filtersearch {
-  margin: 0;
+  margin: 0 0 0 10px;
   padding: 0;
 }
 .filtre {
@@ -289,7 +289,7 @@ i.fa-solid.fa-arrow-left,
   margin: auto;
   position: relative;
   flex-direction: column;
-  padding: 1rem;
+  padding: 15px;
   color: white;
   max-width: 1280px;
 }
@@ -297,6 +297,7 @@ i.fa-solid.fa-arrow-left,
   font-weight: normal;
   font-size: 16px;
   line-height: 18px;
+  text-align: left;
   margin-bottom: 5px;
 }
 
@@ -439,7 +440,7 @@ a {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 1rem 2rem 0 1rem;
+  padding: 1rem 2rem 0 15px;
 }
 
 /*Entrées*/
@@ -707,7 +708,7 @@ a {
 .menu-entrees,
 .menu-plats,
 .menu-desserts {
-  padding: 0 10px;
+  padding: 0 15px;
 }
 .encart-title,
 .description {
@@ -791,16 +792,32 @@ a {
 
   .footer-content {
     display: flex;
+    flex-direction: row-reverse;
+    gap: 5%;
     margin: auto;
     position: relative;
-    flex-direction: row;
-    padding: 1rem;
-    color: white;
     max-width: 100%;
     flex-wrap: wrap;
     justify-content: flex-start;
     align-content: flex-start;
     width: 100%;
+    padding-right: 50px;
+  }
+  .footer-logo-title {
+    width: auto;
+    max-width: inherit;
+  }
+  .proposer-restaurant,
+  .partenaire,
+  .mention-legal,
+  .contact,
+  .footer-logo-title {
+    display: block;
+    padding: 0;
+  }
+  .proposer-restaurant,
+  .partenaire {
+    display: flex;
   }
 
   span.heart {
@@ -809,20 +826,24 @@ a {
     margin-left: 0;
   }
 
-
-
-section.menu-list {
-  display: flex;
-  width: 100%;
-  max-width: 100%;
-  justify-content: space-between;
-}
-
   section.menu-list {
-    display: flex;
+    display: block;
     width: 100%;
-    max-width: 100%;
-    justify-content: space-between;
+    max-width: 630px;
+    margin: 0 auto;
+  }
+  .img-navbar {
+    height: 380px;
+    width: 100%;
+    object-fit: cover;
+  }
+  .menu-wrapper {
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  .restaurant-name {
+    justify-content: center;
+    gap: 15px;
   }
 }
 
