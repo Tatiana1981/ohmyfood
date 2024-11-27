@@ -19,7 +19,7 @@ body {
 
 .loader-page{
   position: fixed;
-  background-color: green;
+  background-color: #99E2D0;
   top: 0;
   bottom: 0;
   left: 0;
@@ -27,7 +27,7 @@ body {
   inset: 0;
   z-index: 1;
   height: 100%;
-  opacity: 0.5;
+  opacity: 0.85;
 }
 .loader {
   width: 40px;
@@ -430,8 +430,6 @@ h4 {
 
 /***** la palette du goût****/
 
-main {
-}
 
 .menu-wrapper {
   background-color: #f6f6f6;
