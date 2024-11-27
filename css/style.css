@@ -17,7 +17,11 @@ body {
   padding: 0;
 }
 
-.loader-page{
+.loader-page {
+  animation-duration: 0.5s;
+  animation-delay: 2s;
+  animation-name: loader-disappear;
+  animation-fill-mode: forwards;
   position: fixed;
   background-color: #99E2D0;
   top: 0;
@@ -29,12 +33,61 @@ body {
   height: 100%;
   opacity: 0.85;
 }
+@keyframes loader-disappear {
+  from {
+    opacity: 0.5;
+  }
+
+  to {
+    opacity: 0;
+    display: none;
+  }
+}
+@keyframes entrees-appear {
+  from {
+    /*height: 0px;
+    max-height: 0px;*/
+    transform: translateY(-300px);
+    opacity: 0;
+  }
+
+  to {
+    /*height: auto;
+    max-height: 500px;*/
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.entrees,
+.plats,
+.desserts {
+  animation-name: entrees-appear;
+  animation-fill-mode: forwards;
+ /* max-height: 0px;
+  height: 0px;
+  overflow: hidden;*/
+  transform: translateY(-300px);
+  opacity: 0;
+  animation-duration: 0.5s;
+}
+.entrees {
+  animation-delay: 0.5s;
+}
+.plats {
+  
+  animation-delay: 1s;
+}
+.desserts {
+  
+  animation-delay: 1.5s;
+}
 .loader {
   width: 40px;
   height: 98px;
   display: inline-block;
   position: relative;
-  border: 2px solid #FFF;
+  border: 2px solid #fff;
   box-sizing: border-box;
   color: rgba(255, 121, 218, 0.9);
   border-radius: 20px 20px 4px 4px;
@@ -44,13 +97,13 @@ body {
   margin-top: 300px;
 }
 .loader::after {
-  content: '';
+  content: "";
   box-sizing: border-box;
   position: absolute;
   left: 50%;
   top: 0%;
-  transform: translate(-50% , -95%);
-  border: 2px solid #FFF;
+  transform: translate(-50%, -95%);
+  border: 2px solid #fff;
   border-bottom: none;
   background: #fff;
   width: 15px;
@@ -59,14 +112,23 @@ body {
 }
 
 @keyframes fill {
-  0% { box-shadow: 0 0  inset }
-  50% , 100% { box-shadow: 0 -98px inset }
+  0% {
+    box-shadow: 0 0 inset;
+  }
+  50%,
+  100% {
+    box-shadow: 0 -98px inset;
+  }
 }
 
-
 @keyframes fillNeck {
-  0% , 50%{ box-shadow: 0 0  inset }
-  100% { box-shadow: 0 -20px inset }
+  0%,
+  50% {
+    box-shadow: 0 0 inset;
+  }
+  100% {
+    box-shadow: 0 -20px inset;
+  }
 }
 
 .title-skrikhand {
@@ -496,12 +558,10 @@ a {
 
 /*Entrées*/
 
-
 .bottom {
   display: flex;
   align-items: baseline;
 }
-
 
 /*Plats*/
 
@@ -519,7 +579,6 @@ a {
   padding: 0;
   list-style-type: none;
 }
-
 
 /*Desserts*/
 
@@ -576,7 +635,6 @@ a {
   border-radius: 0.75rem;
   border-top-left-radius: 0;
   border-bottom-left-radius: 0;
-  
 }
 .sub-encart {
   background-color: #fff;
@@ -607,7 +665,7 @@ a {
   height: auto;
   padding: 0;
   display: flex;
-  
+
   margin: 0;
   box-shadow: 0.25rem 0.25rem 1rem rgba(0, 0, 0, 0.1);
   overflow: hidden;
