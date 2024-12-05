@@ -724,6 +724,32 @@ a {
   border: 2px solid rgba(153, 226, 208, 1);
 }
 
+@keyframes sub-encart {
+  from {
+    transform: translateY(-300px);
+    opacity: 0;
+  }
+
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.sub-encart {
+  animation-name: sub-encart;
+  animation-fill-mode: forwards;
+  transform: translateY(-300px);
+  opacity: 0;
+  animation-duration: 0.5s;
+}
+
+.sub-encart {
+  animation-delay: 1s;
+}
+
+
+
 /************MEDIA QUERIES*********/
 
 /*desktop*/
