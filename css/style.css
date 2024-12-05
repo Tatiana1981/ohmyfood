@@ -17,9 +17,9 @@ body {
   padding: 0;
 }
 
-.loader-page{
+.loader-page {
   position: fixed;
-  background-color: #99E2D0;
+  background-color: #99e2d0;
   top: 0;
   bottom: 0;
   left: 0;
@@ -28,13 +28,24 @@ body {
   z-index: 1;
   height: 100%;
   opacity: 0.85;
+  animation: disappear 1s forwards;
+  animation-delay: 4s;
+}
+@keyframes disappear {
+  from {
+    opacity: 0.85;
+  }
+  to {
+    opacity: 0;
+    display: none;
+  }
 }
 .loader {
   width: 40px;
   height: 98px;
   display: inline-block;
   position: relative;
-  border: 2px solid #FFF;
+  border: 2px solid #fff;
   box-sizing: border-box;
   color: rgba(255, 121, 218, 0.9);
   border-radius: 20px 20px 4px 4px;
@@ -44,13 +55,13 @@ body {
   margin-top: 300px;
 }
 .loader::after {
-  content: '';
+  content: "";
   box-sizing: border-box;
   position: absolute;
   left: 50%;
   top: 0%;
-  transform: translate(-50% , -95%);
-  border: 2px solid #FFF;
+  transform: translate(-50%, -95%);
+  border: 2px solid #fff;
   border-bottom: none;
   background: #fff;
   width: 15px;
@@ -59,14 +70,23 @@ body {
 }
 
 @keyframes fill {
-  0% { box-shadow: 0 0  inset }
-  50% , 100% { box-shadow: 0 -98px inset }
+  0% {
+    box-shadow: 0 0 inset;
+  }
+  50%,
+  100% {
+    box-shadow: 0 -98px inset;
+  }
 }
 
-
 @keyframes fillNeck {
-  0% , 50%{ box-shadow: 0 0  inset }
-  100% { box-shadow: 0 -20px inset }
+  0%,
+  50% {
+    box-shadow: 0 0 inset;
+  }
+  100% {
+    box-shadow: 0 -20px inset;
+  }
 }
 
 .title-skrikhand {
@@ -222,8 +242,32 @@ footer {
 .card-content h3 {
   margin: 18px;
 }
+.heart {
+  position: relative;
+  width: 32px;
+  height: 32px;
 
+}
+.fa-heart {
+  transition: opacity 500ms ease-in-out;
+}
+.heart:hover i.fa-solid.fa-heart {
+  opacity: 1;
+}
+.heart:hover i.fa-regular.fa-heart {
+  opacity: 0;
+}
+i.fa-solid.fa-heart,i.fa-regular.fa-heart {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+}
+
+i.fa-regular.fa-heart {
+  opacity: 1;
+}
 i.fa-solid.fa-heart {
+  opacity: 0;
   color: transparent;
   background-clip: text;
 
@@ -430,7 +474,6 @@ h4 {
 
 /***** la palette du goût****/
 
-
 .menu-wrapper {
   background-color: #f6f6f6;
   border: 1px solid transparent;
@@ -496,12 +539,10 @@ a {
 
 /*Entrées*/
 
-
 .bottom {
   display: flex;
   align-items: baseline;
 }
-
 
 /*Plats*/
 
@@ -519,7 +560,6 @@ a {
   padding: 0;
   list-style-type: none;
 }
-
 
 /*Desserts*/
 
@@ -560,9 +600,14 @@ a {
     rgba(147, 86, 220, 0.9),
     rgba(255, 121, 218, 0.9)
   );
-  transition-duration: 0.25ms;
+
   box-shadow: 0.25rem, 0.25rem, 10px rgba(0, 0, 0, 0.25);
   cursor: pointer;
+  opacity: 1;
+  transition: opacity 1s ease-in-out;
+}
+.combtn:hover {
+  opacity: 0.85;
 }
 .menubtn_confirmation {
   background-color: white;
@@ -576,7 +621,6 @@ a {
   border-radius: 0.75rem;
   border-top-left-radius: 0;
   border-bottom-left-radius: 0;
-  
 }
 .sub-encart {
   background-color: #fff;
@@ -607,7 +651,7 @@ a {
   height: auto;
   padding: 0;
   display: flex;
-  
+
   margin: 0;
   box-shadow: 0.25rem 0.25rem 1rem rgba(0, 0, 0, 0.1);
   overflow: hidden;
