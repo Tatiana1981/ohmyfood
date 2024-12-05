@@ -447,6 +447,11 @@ footer {
   padding: 0;
 }
 
+.contact-link {
+  cursor: pointer;
+  text-decoration: none;
+}
+
 h4 {
   margin: 0;
 }
